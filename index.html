@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Clínica Diamond Lux | Estética Avançada</title>
+<meta name="description" content="Harmonização glútea, subcisão de celulite, PRP e PRF, toxina botulínica e terapia capilar no Alto da Mooca, São Paulo. Avaliação personalizada na Clínica Diamond Lux."/>
+<meta name="theme-color" content="#0C1016"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Clínica Diamond Lux | Estética Avançada"/>
+<meta property="og:description" content="Harmonização glútea, subcisão de celulite, PRP e PRF, toxina botulínica e terapia capilar no Alto da Mooca, São Paulo. Avaliação personalizada na Clínica Diamond Lux."/>
+<meta property="og:image" content="img/recepcao-wide.jpg"/>
+<meta property="og:locale" content="pt_BR"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" href="img/favicon-32.png" sizes="32x32"/>
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+
+<link rel="stylesheet" href="styles.css"/>
+
+<!-- marca que há JS: sem isso o CSS mantém tudo visível, nunca em branco -->
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ═══════════ SPRITE DE ÍCONES (line-art, estilo Lucide, stroke 1.5) ═══════════ -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+  <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.9 5.1a2 2 0 0 0 1.1 1.1L20 11l-5 1.8a2 2 0 0 0-1.1 1.1L12 19l-1.9-5.1a2 2 0 0 0-1.1-1.1L4 11l5-1.8a2 2 0 0 0 1.1-1.1Z"/><path d="M19 3v4"/><path d="M17 5h4"/><path d="M5 17v3"/><path d="M3.5 18.5h3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.4-7.7 8.9a1 1 0 0 1-.6 0C7.5 20.4 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.6 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5C2 10.8 3.5 12.5 5 14l7 7Z"/></symbol>
+  <symbol id="i-face" viewBox="0 0 24 24"><path d="M12 2c4.4 0 7 3 7 7.5 0 4-1.2 6.4-2.6 8.2A6 6 0 0 1 12 22a6 6 0 0 1-4.4-4.3C6.2 15.9 5 13.5 5 9.5 5 5 7.6 2 12 2Z"/><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M10 15.5c1.2.7 1.8.7 3 0"/></symbol>
+  <symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5S12.5 5.5 12 3c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7Z"/></symbol>
+  <symbol id="i-molecule" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="17" r="2.2"/><circle cx="19" cy="17" r="2.2"/><circle cx="12" cy="12.5" r="1.6"/><path d="m11 6.9-3.3 4"/><path d="m13 6.9 3.3 4"/><path d="M10.6 13.6 6.6 15.6"/><path d="m13.4 13.6 4 2"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M6 8.5h4"/><path d="M6 12h7"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><path d="M11.6 3.3a.5.5 0 0 1 .9 0l2.9 5.6a1 1 0 0 0 1.5.3l4.3-3.7a.5.5 0 0 1 .8.5l-2.8 10.2a1 1 0 0 1-1 .8H5.8a1 1 0 0 1-1-.8L2 6a.5.5 0 0 1 .8-.5l4.3 3.7a1 1 0 0 0 1.5-.3Z"/><path d="M5 21h14"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3"/><path d="M15 2v3"/><path d="M9 19v3"/><path d="M15 19v3"/><path d="M2 9h3"/><path d="M2 15h3"/><path d="M19 9h3"/><path d="M19 15h3"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6"/><path d="M10 3v6.5L4.8 18a2 2 0 0 0 1.7 3h11a2 2 0 0 0 1.7-3L14 9.5V3"/><path d="M7.3 14h9.4"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2.5v4"/><path d="M16 2.5v4"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.04-5.16-2.92-7.04A9.87 9.87 0 0 0 12.04 2Zm5.83 14.24c-.24.68-1.42 1.31-1.96 1.36-.5.05-.98.23-3.3-.7-2.78-1.1-4.55-3.94-4.69-4.12-.14-.18-1.12-1.49-1.12-2.84 0-1.35.71-2.02.96-2.29a1 1 0 0 1 .73-.34h.52c.17 0 .4-.06.62.48.24.57.8 1.97.87 2.11.07.14.11.31.02.5-.09.18-.14.3-.27.46l-.4.46c-.13.14-.27.29-.12.56.15.27.67 1.1 1.43 1.78.98.87 1.8 1.14 2.07 1.28.27.14.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.87.27.14.45.2.51.31.07.11.07.63-.17 1.31Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-body" viewBox="0 0 24 24"><circle cx="12" cy="4.2" r="1.9"/><path d="M12 8v6"/><path d="m6.5 9 5.5-1.4L17.5 9"/><path d="m9 21 3-7 3 7"/></symbol>
+  <symbol id="i-waves" viewBox="0 0 24 24"><path d="M2.5 7.5c1 .8 1.9 1.3 3.2 1.3 2.7 0 2.7-2.6 5.4-2.6s2.7 2.6 5.4 2.6c1.3 0 2.2-.5 3-1.3"/><path d="M2.5 13c1 .8 1.9 1.3 3.2 1.3 2.7 0 2.7-2.6 5.4-2.6s2.7 2.6 5.4 2.6c1.3 0 2.2-.5 3-1.3"/><path d="M2.5 18.5c1 .8 1.9 1.3 3.2 1.3 2.7 0 2.7-2.6 5.4-2.6s2.7 2.6 5.4 2.6c1.3 0 2.2-.5 3-1.3"/></symbol>
+  <symbol id="i-tube" viewBox="0 0 24 24"><path d="M15 2v14.6a3.4 3.4 0 0 1-6.8 0V2"/><path d="M6.6 2h10"/><path d="M8.2 12.4H15"/></symbol>
+  <symbol id="i-syringe" viewBox="0 0 24 24"><path d="m18.5 2.5 3 3"/><path d="m17 8 3.5-3.5"/><path d="M18.4 9.6 8.9 19.1a2.2 2.2 0 0 1-3.1 0l-.9-.9a2.2 2.2 0 0 1 0-3.1L14.4 5.6Z"/><path d="m9.6 10.4 4 4"/><path d="m5 19-2.5 2.5"/></symbol>
+  <symbol id="i-helmet" viewBox="0 0 24 24"><path d="M4 15a8 8 0 0 1 16 0v1.6a2.4 2.4 0 0 1-2.4 2.4H6.4A2.4 2.4 0 0 1 4 16.6Z"/><path d="M12 3.4V1.8"/><path d="m5.9 5.9-1.1-1.1"/><path d="m18.1 5.9 1.1-1.1"/><path d="M9 19v3"/><path d="M15 19v3"/></symbol>
+  <symbol id="i-droplets" viewBox="0 0 24 24"><path d="M7.4 16.6a4 4 0 0 0 4-4c0-1.1-.6-2.2-1.7-3.1S7.7 7.1 7.4 5.7c-.3 1.4-1.1 2.8-2.3 3.7s-1.7 2-1.7 3.1a4 4 0 0 0 4 4.1Z"/><path d="M12.8 6.7A10.7 10.7 0 0 0 14.2 3c.5 2.5 2 4.9 3.9 6.4s2.9 3.4 2.9 5.4a6.8 6.8 0 0 1-11.6 4.8"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<!-- Âncora do "Início". Não pode ficar no cabeçalho: ele é fixo no topo da
+     tela, então o navegador o considera sempre visível e não rola nada. -->
+<span id="topo" aria-hidden="true"></span>
+
+<!-- ═══════════ 01 · HEADER ═══════════ -->
+<header class="hd">
+  <div class="wrap hd__in">
+
+    <a class="logo" href="#topo" aria-label="Clínica Diamond Lux — página inicial">
+      <img class="logo__gem" src="img/logo-mark.png" alt="" width="134" height="108"/>
+      <img class="logo__word" src="img/logo-wordmark.png" alt="Clínica Diamond Lux" width="465" height="96"/>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a class="nav__a is-on" href="#topo">Início</a>
+      <a class="nav__a" href="#sobre">Sobre</a>
+      <a class="nav__a" href="#servicos">Serviços</a>
+      <a class="nav__a" href="#estrutura">Estrutura</a>
+      <a class="nav__a" href="#tecnologia">Tecnologia</a>
+      <a class="nav__a" href="#depoimentos">Depoimentos</a>
+      <a class="nav__a" href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn--gold hd__cta" href="#contato">
+      Agendar avaliação <svg class="ic ic--14" aria-hidden="true"><use href="#i-calendar"/></svg>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═══════════ 02 · HERO ═══════════ -->
+<section class="hero">
+  <div class="hero__media">
+    <!-- foto: recepção da Clínica Diamond Lux -->
+    <img src="img/recepcao-wide.jpg" alt="Recepção da Clínica Diamond Lux, com painel ripado, poltronas e televisão." fetchpriority="high" width="2400" height="1730"/>
+    <span class="hero__veil" aria-hidden="true"></span>
+  </div>
+
+  <div class="wrap hero__in">
+    <div class="hero__copy rv">
+      <p class="eyebrow">Estética avançada</p>
+      <h1 class="hero__h1">Onde beleza, tecnologia <br/>e cuidado se encontram.</h1>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="hero__p">Protocolos personalizados, tecnologia de ponta <br/>e um ambiente sofisticado para realçar <br/>sua melhor versão com segurança e excelência.</p>
+
+      <div class="btns">
+        <a class="btn btn--gold" href="#contato">Agendar avaliação <svg class="ic ic--14" aria-hidden="true"><use href="#i-calendar"/></svg></a>
+        <a class="btn btn--ghost" href="https://wa.me/5511999460403?text=Opa%2C%20vim%20do%20site!" target="_blank" rel="noopener">
+          <svg class="ic ic--16 ic--wa" aria-hidden="true"><use href="#i-whatsapp"/></svg> Falar no WhatsApp
+        </a>
+      </div>
+
+      <img class="hero__mark" src="img/logo-mark.png" alt="" width="134" height="108"/>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 04 · SOBRE A CLÍNICA ═══════════ -->
+<section class="sec sobre" id="sobre">
+  <div class="wrap sobre__grid">
+
+    <div class="sobre__copy rv">
+      <p class="eyebrow">Sobre a clínica</p>
+      <h2 class="h2">Excelência que<br/>você sente em<br/>cada detalhe.</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="p">A Clínica Diamond Lux foi criada para oferecer o que há de mais moderno em estética avançada, unindo tecnologia, conhecimento e um atendimento verdadeiramente humanizado.</p>
+      <p class="p">Cada protocolo é pensado de forma individual para proporcionar resultados naturais, seguros e duradouros, com conforto e discrição em um ambiente acolhedor e sofisticado.</p>
+
+      <a class="btn btn--dark" href="#estrutura">Conheça nossa estrutura <svg class="ic ic--14 ic--gold" aria-hidden="true"><use href="#i-chevron"/></svg></a>
+    </div>
+
+    <figure class="sobre__fig rv">
+      <!-- foto: Thalita, proprietária da clínica -->
+      <img src="img/thalita.jpg" alt="Thalita, proprietária da Clínica Diamond Lux, sentada lendo uma revista de estética." loading="lazy" width="1200" height="1200"/>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ═══════════ 05 · NOSSOS SERVIÇOS ═══════════ -->
+<section class="sec servicos" id="servicos">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Nossos serviços</p>
+      <h2 class="h2 h2--c">Soluções completas para realçar sua beleza</h2>
+    </div>
+
+    <div class="carr rv" data-carr>
+      <ul class="carr__trilho" data-carr-trilho tabindex="0" role="list" aria-label="Serviços da clínica">
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-user"/></svg>
+        <h3 class="card__t">Avaliação<br/>Personalizada</h3>
+        <p class="card__d">Análise completa e plano de tratamento exclusivo.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-face"/></svg>
+        <h3 class="card__t">Cuidados<br/>Faciais</h3>
+        <p class="card__d">Protocolos avançados para uma pele saudável e radiante.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-droplet"/></svg>
+        <h3 class="card__t">Rejuvenescimento</h3>
+        <p class="card__d">Tratamentos que estimulam o colágeno e devolvem firmeza e vitalidade.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-molecule"/></svg>
+        <h3 class="card__t">Protocolos<br/>de Pele</h3>
+        <p class="card__d">Soluções para manchas, acne, textura e uniformização.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-device"/></svg>
+        <h3 class="card__t">Tecnologia<br/>Estética</h3>
+        <p class="card__d">Equipamentos de última geração para resultados efetivos e seguros.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-crown"/></svg>
+        <h3 class="card__t">Atendimento<br/>Premium</h3>
+        <p class="card__d">Conforto, privacidade e acompanhamento em cada etapa.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-body"/></svg>
+        <h3 class="card__t">Harmonização<br/>Glútea</h3>
+        <p class="card__d">Contorno e volume da região glútea, com plano definido na avaliação.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-waves"/></svg>
+        <h3 class="card__t">Subcisão<br/>de Celulite</h3>
+        <p class="card__d">Liberação das traves fibrosas com cânula e ativo para preencher a depressão.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-tube"/></svg>
+        <h3 class="card__t">PRP e PRF</h3>
+        <p class="card__d">Plasma rico em plaquetas e em fibrina, preparados do seu próprio sangue.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-syringe"/></svg>
+        <h3 class="card__t">Toxina<br/>Botulínica</h3>
+        <p class="card__d">Aplicação para suavizar linhas de expressão, com dosagem individualizada.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-helmet"/></svg>
+        <h3 class="card__t">Terapia<br/>Capilar</h3>
+        <p class="card__d">Protocolo capilar com capacete de LED I9 Profissional e ativos PHD Victa.</p>
+      </li>
+      <li class="card">
+        <svg class="ic ic--28" aria-hidden="true"><use href="#i-droplets"/></svg>
+        <h3 class="card__t">Limpeza<br/>de Pele</h3>
+        <p class="card__d">Higienização profunda, extração e finalização com ativos adequados à sua pele.</p>
+      </li>
+      </ul>
+
+      <div class="carr__nav">
+        <button class="carr__b carr__b--ant" type="button" data-carr-ant aria-label="Ver serviços anteriores">
+          <svg class="ic ic--16" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <button class="carr__b" type="button" data-carr-prox aria-label="Ver mais serviços">
+          <svg class="ic ic--16" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 06 · NOSSA ESTRUTURA ═══════════ -->
+<section class="sec estrutura" id="estrutura">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Nossa estrutura</p>
+      <h2 class="h2 h2--c">Ambientes pensados para o seu bem-estar</h2>
+    </div>
+
+    <ul class="gal rv">
+      <li class="gal__i">
+        <figure><img src="img/entrada.jpg" alt="Entrada da Clínica Diamond Lux, com a placa da clínica na porta." loading="lazy" width="960" height="1008"/></figure>
+        <p class="gal__c"><span class="gal__n">01</span> Entrada</p>
+      </li>
+      <li class="gal__i">
+        <figure><img src="img/recepcao.jpg" alt="Recepção da Clínica Diamond Lux." loading="lazy" width="960" height="1008"/></figure>
+        <p class="gal__c"><span class="gal__n">02</span> Recepção</p>
+      </li>
+      <li class="gal__i">
+        <figure><img src="img/cantinho-cafe.jpg" alt="Cantinho do café da Clínica Diamond Lux." loading="lazy" width="960" height="1008"/></figure>
+        <p class="gal__c"><span class="gal__n">03</span> Cantinho do Café</p>
+      </li>
+      <li class="gal__i">
+        <figure><img src="img/sobre-clinica.jpg" alt="Escritório da Clínica Diamond Lux, com jardim vertical e mesa de vidro." loading="lazy" width="2000" height="1042"/></figure>
+        <p class="gal__c"><span class="gal__n">04</span> Escritório</p>
+      </li>
+      <li class="gal__i">
+        <figure><img src="img/sala-tratamentos.jpg" alt="Sala de tratamentos da Clínica Diamond Lux, com maca e equipamentos." loading="lazy" width="960" height="1008"/></figure>
+        <p class="gal__c"><span class="gal__n">05</span> Sala de Tratamentos</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ 07 · TECNOLOGIA E PROTOCOLOS ═══════════ -->
+<section class="tec" id="tecnologia">
+  <div class="wrap tec__grid">
+
+    <div class="tec__copy rv">
+      <p class="eyebrow">Tecnologia e protocolos</p>
+      <h2 class="h2 h2--inv">Ciência, tecnologia<br/>e segurança para<br/>resultados reais.</h2>
+      <p class="p p--inv">Equipamentos de última geração, protocolos exclusivos e ativos de alta performance para transformar sua pele com eficácia, segurança e naturalidade.</p>
+
+      <ul class="tec__list">
+        <li><svg class="ic ic--20" aria-hidden="true"><use href="#i-cpu"/></svg><span>Equipamentos<br/>de ponta</span></li>
+        <li><svg class="ic ic--20" aria-hidden="true"><use href="#i-clipboard"/></svg><span>Protocolos<br/>personalizados</span></li>
+        <li><svg class="ic ic--20" aria-hidden="true"><use href="#i-flask"/></svg><span>Produtos<br/>premium</span></li>
+        <li><svg class="ic ic--20" aria-hidden="true"><use href="#i-shield"/></svg><span>Segurança<br/>e eficácia</span></li>
+      </ul>
+    </div>
+
+    <div class="tec__shots rv">
+      <!-- foto: sala de tratamentos -->
+      <figure><img src="img/sala-tratamentos.jpg" alt="Maca e equipamentos na sala de tratamentos." loading="lazy" width="960" height="1008"/></figure>
+      <!-- foto: equipamentos com espelho -->
+      <figure><img src="img/equipamentos.jpg" alt="Equipamentos de estética avançada ao lado do espelho da clínica." loading="lazy" width="900" height="1280"/></figure>
+      <!-- foto: linhas de produtos sobre o armário -->
+      <figure><img src="img/produtos.jpg" alt="Linhas de produtos e ativos utilizados nos protocolos da clínica." loading="lazy" width="900" height="1280"/></figure>
+    </div>
+
+  </div>
+
+  <!-- equipamento em destaque -->
+  <div class="wrap">
+    <div class="supra rv">
+      <div class="supra__copy">
+        <p class="eyebrow">Equipamento em destaque</p>
+        <h3 class="supra__t">Supra Máximus</h3>
+        <p class="p p--inv">Trabalha a musculatura por campo eletromagnético pulsado (PEMF), que produz contrações musculares intensas. Entra em protocolos de tonificação, definição de contorno e fortalecimento muscular, e também no trabalho de assoalho pélvico.</p>
+        <p class="supra__note">As indicações e o número de sessões são definidos na sua avaliação.</p>
+      </div>
+      <div class="supra__areas">
+        <p class="supra__lbl">Regiões trabalhadas</p>
+        <ul class="supra__tags">
+          <li>Glúteos</li>
+          <li>Abdômen</li>
+          <li>Coxas</li>
+          <li>Panturrilhas</li>
+          <li>Bíceps</li>
+          <li>Tríceps</li>
+          <li>Assoalho pélvico</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 07b · MARCAS E PRODUTOS ═══════════ -->
+<section class="sec marcas" id="marcas">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Marcas e produtos</p>
+      <h2 class="h2 h2--c">As linhas que usamos<br/>nos protocolos</h2>
+    </div>
+
+    <div class="carr rv" data-carr>
+      <ul class="carr__trilho" data-carr-trilho tabindex="0" role="list" aria-label="Marcas e produtos usados na clínica">
+        <li class="mcard">
+          <p class="mcard__tag">Ativos e produtos</p>
+          <h3 class="mcard__n">Rennova</h3>
+          <p class="mcard__d">Linha brasileira de injetáveis estéticos, com ácido hialurônico e bioestimuladores de colágeno.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Ativos e produtos</p>
+          <h3 class="mcard__n">PHD</h3>
+          <p class="mcard__d">Ativos profissionais usados nos protocolos da clínica, entre eles o capilar.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Ativos e produtos</p>
+          <h3 class="mcard__n">Victa</h3>
+          <p class="mcard__d">Linha de ativos aplicada em protocolo, combinada com o aparelho indicado para o caso.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Ativos e produtos</p>
+          <h3 class="mcard__n">Biometil</h3>
+          <p class="mcard__d">Ativos de uso profissional, aplicados durante o atendimento.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Ativos e produtos</p>
+          <h3 class="mcard__n">Aeskins</h3>
+          <p class="mcard__d">Ativos de uso profissional, aplicados durante o atendimento.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Ativos e produtos</p>
+          <h3 class="mcard__n">Lebon Farma</h3>
+          <p class="mcard__d">Fornecedor de produtos manipulados para uso nos protocolos.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Ativos e produtos</p>
+          <h3 class="mcard__n">Promoitalia</h3>
+          <p class="mcard__d">Marca italiana de produtos para estética avançada, distribuída no Brasil.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Produtos de pele</p>
+          <h3 class="mcard__n">Tulípia</h3>
+          <p class="mcard__d">Linha de cuidado da pele usada nos protocolos faciais.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Produtos de pele</p>
+          <h3 class="mcard__n">Bioge</h3>
+          <p class="mcard__d">Linha de cuidado da pele usada nos protocolos faciais.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Produtos de pele</p>
+          <h3 class="mcard__n">Extratos da Terra</h3>
+          <p class="mcard__d">Cosméticos profissionais de base natural, para cuidado da pele.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Produtos de pele</p>
+          <h3 class="mcard__n">Smart Gr</h3>
+          <p class="mcard__d">Linha de cuidado da pele usada nos protocolos faciais.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Produtos de pele</p>
+          <h3 class="mcard__n">Ellementti</h3>
+          <p class="mcard__d">Linha de cuidado da pele usada nos protocolos faciais.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Produtos de pele</p>
+          <h3 class="mcard__n">ECCOS</h3>
+          <p class="mcard__d">Cosméticos profissionais para limpeza e cuidado da pele.</p>
+        </li>
+        <li class="mcard">
+          <p class="mcard__tag">Produtos de pele</p>
+          <h3 class="mcard__n">Bel Col</h3>
+          <p class="mcard__d">Linha profissional de cosméticos para protocolos faciais e corporais.</p>
+        </li>
+      </ul>
+
+      <div class="carr__nav">
+        <button class="carr__b carr__b--ant" type="button" data-carr-ant aria-label="Ver marcas anteriores">
+          <svg class="ic ic--16" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <button class="carr__b" type="button" data-carr-prox aria-label="Ver mais marcas">
+          <svg class="ic ic--16" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <p class="marcas__nota rv">Entre outras marcas profissionais, escolhidas de acordo com cada protocolo.</p>
+  </div>
+</section>
+
+<!-- ═══════════ 08 · DEPOIMENTOS ═══════════ -->
+<section class="sec depo" id="depoimentos">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Depoimentos do Google</p>
+      <h2 class="h2 h2--c">O que nossos pacientes dizem</h2>
+    </div>
+
+    <ul class="depo__list rv">
+      <li class="quote">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <div class="quote__body">
+          <p class="quote__t">Ótimo atendimento com tecnologia avançada. Adorei o meu procedimento, super indico. Profissional capacitada e muito carismática.</p>
+          <p class="quote__f"><span>— Claudia C.</span><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span></p>
+        </div>
+      </li>
+      <li class="quote">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <div class="quote__body">
+          <p class="quote__t">Clínica de alto nível, moderna, tecnológica e com atendimento de altíssimo nível, com equipamentos de última geração. Muito diferenciada!</p>
+          <p class="quote__f"><span>— Paulo S.</span><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span></p>
+        </div>
+      </li>
+      <li class="quote">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <div class="quote__body">
+          <p class="quote__t">Fiz limpeza de pele e amei!</p>
+          <p class="quote__f"><span>— Maria Alice S.</span><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ 09 · CTA FINAL ═══════════ -->
+<section class="cta-band" id="agendar">
+  <div class="wrap">
+    <div class="cta rv">
+      <div class="cta__l">
+        <img class="cta__gem" src="img/logo-mark-gold.png" alt="" width="134" height="108"/>
+        <div>
+          <h2 class="cta__t">Pronta para realçar sua melhor versão?</h2>
+          <p class="cta__s">Agende sua avaliação e descubra o protocolo ideal para você.</p>
+        </div>
+      </div>
+      <div class="btns">
+        <a class="btn btn--gold" href="https://wa.me/5511999460403?text=Opa%2C%20vim%20do%20site!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação <svg class="ic ic--14" aria-hidden="true"><use href="#i-calendar"/></svg></a>
+        <a class="btn btn--ghost" href="https://wa.me/5511999460403?text=Opa%2C%20vim%20do%20site!" target="_blank" rel="noopener"><svg class="ic ic--16 ic--wa" aria-hidden="true"><use href="#i-whatsapp"/></svg> Falar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ 10 · FORMULÁRIO DE AVALIAÇÃO ═══════════ -->
+<section class="sec form-sec" id="contato">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Agende sua avaliação</p>
+      <h2 class="h2 h2--c">Preencha e a gente entra em contato</h2>
+      <p class="form-sec__sub">Leva menos de um minuto. Retornamos pelo WhatsApp com os horários disponíveis.</p>
+    </div>
+
+    <!-- method="post" por segurança: se o JavaScript falhar, o navegador não
+         joga nome, CPF e telefone na barra de endereço. -->
+    <form class="form rv" id="lead" method="post" novalidate>
+      <div class="fld">
+        <label for="f-nome">Nome completo</label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" required/>
+        <span class="fld__e" id="e-f-nome"></span>
+      </div>
+
+      <div class="fld">
+        <label for="f-tel">Telefone / WhatsApp</label>
+        <input id="f-tel" name="telefone" type="tel" inputmode="numeric" autocomplete="tel"
+               placeholder="(11) 90000-0000" maxlength="16" required/>
+        <span class="fld__e" id="e-f-tel"></span>
+      </div>
+
+      <div class="fld">
+        <label for="f-email">E-mail</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required/>
+        <span class="fld__e" id="e-f-email"></span>
+      </div>
+
+      <div class="fld">
+        <label for="f-cpf">CPF</label>
+        <input id="f-cpf" name="cpf" type="text" inputmode="numeric"
+               placeholder="000.000.000-00" maxlength="14" required/>
+        <span class="fld__e" id="e-f-cpf"></span>
+      </div>
+
+      <div class="fld">
+        <label for="f-nasc">Data de nascimento</label>
+        <input id="f-nasc" name="nascimento" type="date" required/>
+        <span class="fld__e" id="e-f-nasc"></span>
+      </div>
+
+      <div class="fld">
+        <label for="f-sexo">Sexo</label>
+        <select id="f-sexo" name="sexo" required>
+          <option value="">Selecione</option>
+          <option>Feminino</option>
+          <option>Masculino</option>
+          <option>Prefiro não informar</option>
+        </select>
+        <span class="fld__e" id="e-f-sexo"></span>
+      </div>
+
+      <div class="fld fld--w">
+        <label for="f-end">Endereço</label>
+        <input id="f-end" name="endereco" type="text" autocomplete="street-address"
+               placeholder="Rua, número, bairro, cidade" required/>
+        <span class="fld__e" id="e-f-end"></span>
+      </div>
+
+      <div class="fld fld--w">
+        <label for="f-msg">Mensagem <span class="fld__opt">(opcional)</span></label>
+        <textarea id="f-msg" name="mensagem" rows="4"
+                  placeholder="Conte o que você gostaria de tratar."></textarea>
+      </div>
+
+      <label class="chk fld--w">
+        <input id="f-ok" name="consentimento" type="checkbox" required/>
+        <span>Autorizo a Clínica Diamond Lux a usar meus dados para entrar em contato sobre esta avaliação.</span>
+      </label>
+      <span class="fld__e fld--w" id="e-f-ok"></span>
+
+      <div class="form__go fld--w">
+        <button type="submit" class="btn btn--gold">
+          Enviar pelo WhatsApp <svg class="ic ic--16 ic--wa" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        </button>
+        <p class="form__note">Seus dados vão direto para o WhatsApp da clínica. Não ficam salvos neste site.</p>
+      </div>
+
+      <p class="form__ok fld--w" id="formOk" role="status" hidden>
+        Tudo certo! Abrimos o WhatsApp com os seus dados — é só enviar a mensagem.
+      </p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ 10 · FOOTER ═══════════ -->
+<footer class="ft">
+  <div class="wrap ft__grid">
+
+    <div class="ft__brand">
+      <a class="logo logo--ft" href="#topo" aria-label="Clínica Diamond Lux">
+      <img class="logo__gem" src="img/logo-mark.png" alt="" width="134" height="108"/>
+      <img class="logo__word" src="img/logo-wordmark.png" alt="Clínica Diamond Lux" width="465" height="96"/>
+      
+      </a>
+      <p class="ft__about">Estética avançada com tecnologia, segurança e cuidado personalizado para realçar sua beleza natural.</p>
+      <div class="ft__social">
+        <a href="https://wa.me/5511999460403?text=Opa%2C%20vim%20do%20site!" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic ic--16" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic ic--16" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+        <a href="https://www.google.com/maps?cid=14707650677612329233" target="_blank" rel="noopener" aria-label="Localização"><svg class="ic ic--16" aria-hidden="true"><use href="#i-pin"/></svg></a>
+      </div>
+    </div>
+
+    <nav class="ft__col" aria-label="Navegação do rodapé">
+      <h3 class="ft__h">Navegação</h3>
+      <ul>
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#estrutura">Estrutura</a></li>
+        <li><a href="#tecnologia">Tecnologia</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <nav class="ft__col" aria-label="Serviços">
+      <h3 class="ft__h">Serviços</h3>
+      <ul>
+        <li><a href="#servicos">Harmonização Glútea</a></li>
+        <li><a href="#servicos">Subcisão de Celulite</a></li>
+        <li><a href="#servicos">PRP e PRF</a></li>
+        <li><a href="#servicos">Toxina Botulínica</a></li>
+        <li><a href="#servicos">Terapia Capilar</a></li>
+        <li><a href="#servicos">Limpeza de Pele</a></li>
+      </ul>
+    </nav>
+
+    <nav class="ft__col ft__col--ic" aria-label="Fale conosco">
+      <h3 class="ft__h">Fale conosco</h3>
+      <ul>
+        <li><a href="https://wa.me/5511999460403?text=Opa%2C%20vim%20do%20site!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg class="ic ic--14 ic--gold" aria-hidden="true"><use href="#i-whatsapp"/></svg> Falar no WhatsApp</a></li>
+        <li><a href="#contato"><svg class="ic ic--14 ic--gold" aria-hidden="true"><use href="#i-calendar"/></svg> Agendar avaliação</a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener"><svg class="ic ic--14 ic--gold" aria-hidden="true"><use href="#i-instagram"/></svg> Instagram</a></li>
+        <li><a href="https://www.google.com/maps?cid=14707650677612329233" target="_blank" rel="noopener"><svg class="ic ic--14 ic--gold" aria-hidden="true"><use href="#i-pin"/></svg> Localização</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="wrap ft__bar">
+    <span>© <span id="yr">2026</span> Clínica Diamond Lux. Todos os direitos reservados.</span>
+    <span class="ft__by">Desenvolvido por <strong>Studio Drumelli</strong></span>
+  </div>
+</footer>
+
+
+<!-- ═══════════ ASSISTENTE LUX ═══════════ -->
+<button type="button" class="bot__bar" id="botBar" aria-expanded="false" aria-controls="botWin">
+  <img src="img/logo-mark-gold.png" alt="" width="144" height="108"/>
+  <span>Lux — tire suas dúvidas</span>
+</button>
+
+<div class="bot" id="botWin" aria-label="Lux, assistente da Clínica Diamond Lux">
+  <div class="bot__hd">
+    <img src="img/logo-mark-gold.png" alt="" width="144" height="108"/>
+    <div class="bot__id">
+      <h3>Lux</h3>
+      <span>Assistente da Diamond Lux</span>
+    </div>
+    <button type="button" class="bot__x" id="botClose" aria-label="Fechar assistente">✕</button>
+  </div>
+
+  <div class="bot__msgs" id="botMsgs" role="log" aria-live="polite">
+    <p class="bot__m bot__m--bot">Oi! Sou a Lux, assistente da Clínica Diamond Lux. Posso falar sobre os procedimentos, o agendamento e a estrutura da clínica. Por onde começamos?</p>
+  </div>
+
+  <div class="bot__sug" id="botSug">
+    <button type="button" class="bot__s" data-q="procedimentos">Procedimentos</button>
+    <button type="button" class="bot__s" data-q="avaliacao">Primeira avaliação</button>
+    <button type="button" class="bot__s" data-q="capilar">Terapia capilar</button>
+    <button type="button" class="bot__s" data-q="celulite">Celulite</button>
+    <button type="button" class="bot__s" data-q="local">Onde fica</button>
+    <button type="button" class="bot__s" data-q="agendar">Agendar</button>
+  </div>
+
+  <form class="bot__in" id="botForm">
+    <label class="sr" for="botIn">Escreva sua dúvida</label>
+    <input id="botIn" type="text" placeholder="Escreva sua dúvida..." autocomplete="off"/>
+    <button type="submit" class="bot__send" aria-label="Enviar">
+      <svg class="ic ic--16" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
+    </button>
+  </form>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
